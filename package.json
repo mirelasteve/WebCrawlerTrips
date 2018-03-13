@@ -1,0 +1,32 @@
+{
+    "name": "WebCrawlerTrips",
+    "version": "1.0.0",
+    "description": "",
+    "main": "app.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "migrate": "node_modules/.bin/sequelize db:migrate",
+        "update": "node functionality/update.js",
+        "seed": "node_modules/.bin/sequelize db:seed:all",
+        "order-by-place": "node orderByPlace.js",
+        "statistics-filter-by": "node functionality/filter.js",
+        "statistics-order-by": "node functionality/order.js",
+        "crawl": "node app.js"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "babel-eslint": "^8.2.2",
+        "eslint": "^4.18.2",
+        "jquery": "^3.3.1",
+        "jsdom": "^11.6.2",
+        "mysql2": "^1.5.2",
+        "sequelize": "^4.35.2",
+        "sequelize-auto-migrations": "^1.0.2",
+        "sequelize-cli": "^4.0.0"
+    },
+    "devDependencies": {
+        "eslint-config-google": "^0.9.1"
+    }
+}
